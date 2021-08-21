@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    line-height: 25px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: fixed;
+    padding: 20px;
+    width: 100%;
+    z-index: 2;
+    background: darkslategrey;
+    border-bottom: 2px solid grey;
+}
+
+nav {
+    display: block;
+    flex-direction: column;
+}
+
+.header h1 {
+    margin: 0;
+}
+
+h1 {
+    font-size: 1.7rem;
+}
+
+h2, h1, h3 {
+    margin: 10px 0;
+    color: #222;
+}
+
+#walemust {
+    background: white;
+    border-radius: 100%;
+    padding: 5px 10px;
+    color: darkslategrey;
+    font-weight: 700;
+}
+
+.header h1 a {
+    font-size: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    padding-bottom: 5px;
+}
+
+.header ul {
+    width: 40%;
+    display: none;
+}
+
+ul {
+    font-size: 1.16rem;
+    list-style-type: none;
+}
+
+li {
+    margin: 10px 0;
+}
+
+.header img {
+    display: inline-block;
+}
+
+#about {
+    position: relative;
+    top: 65px;
+    clear: both;
+}
+
+p {
+    margin: 20px 0;
+    font-size: 1.2rem;
+}
+
+.main, .content, #contact {
+    padding: 10px;
+}
+
+.btn {
+    background: darkslategrey;
+    border: 3px solid grey;
+    border-radius: 5px;
+    margin: 20px 0 10px;
+    padding: 0.8rem 1.3rem;
+    display: inline-block;
+    font-weight: 500;
+}
+
+.img-download {
+    height: 15px;
+}
+
+.profile {
+    box-shadow: 0 0 7px #00000080;
+    border-radius: 25px;
+    margin: auto;
+    width: 50%;
+}
+
+.top {
+    background: #eee;
+    padding: 1rem;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.logo {
+    width: 150px;
+}
+
+.center img {
+    width: 300px;
+    border-radius: 100%;
+    box-shadow: 0 0 7px var(--shadow);
+    display: block;
+    margin: 10px auto;
+}
+
+.profile, .content, .center img {
+    width: 95%;
+}
+
+#skillset {
+    position: relative;
+    top: 25px;
+    margin: 50px 0;
+    padding: 0 45px;
+}
+
+#skillset h2 {
+    text-align: center;
+}
+
+#skillset ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.svg {
+    height: 8.5rem;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 30px;
+}
+
+.activities, .hobbies, .education, .work {
+    border-left: 5px solid #333;
+    padding: 0 10px;
+}
+
+#contact img {
+    margin-right: 10px;
+}
+
+.footer {
+    text-align: center;
+    padding: 8px;
+    background: darkslategrey;
+    color: white;
+}
+
+.footer img {
+    padding: 0.5rem;
+    font-size: 1.25rem;
+}
+
+.social img {
+    margin: 10px 10px 5px;
+    border-radius: 50%;
+    padding: 10px;
+    height: 50px;
+    display: inline-block;
+}
+
+@media screen and (min-width: 850px) {
+    .header {
+        padding: 10px 20px;
+        background: darkslategrey;
+        border-bottom: 2px solid grey;
+    }
+
+    .header h1{
+        margin: 0;
+    }
+    nav, .header ul {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header ul {
+        width: 40%;
+        justify-content: space-between;
+    }
+    .header img {
+        font-size: 25px;
+        color: white;
+        display: none;
+    }
+    #about {
+        display: flex;
+        padding: 10px;
+    }
+    .content {
+        width: 45%;
+        align-self: center;
+        padding: 20px;
+    }
+    .profile {
+        box-shadow: 0 0 7px #00000080;
+        border-radius: 25px;
+        margin: auto;
+        width: 50%;
+    }
+    .top {
+        background: #eee;
+        padding: 1rem;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+    }
+    #skillset {
+        margin: 50px 0;
+        padding: 0 45px;
+    }
+    #skillset ul {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: space-between;
+        row-gap: 50px;
+    }
+    .main {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-between;
+        row-gap: 30px;
+        padding: 0 40px;
+    }
+    #contact {
+        padding: 40px;
+    }
+}
